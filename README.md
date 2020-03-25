@@ -1,2 +1,2 @@
-# Personal-Porfolio
+# Personal-Portfolio
 Personal Portfolio Page for freeCodeCamp
