@@ -8,15 +8,20 @@ body {
     font-family: 'Ubuntu', sans-serif;
 }
 
+
+.navbar img {
+    width: 20%;
+}
+
 .navbar {
-    background: #1b262c;
+    background: #1F1300;
     width: 100%;
-    height: 10em;
+    height: 18em;
     position: fixed;
     display: flex;
     justify-content: flex-end;
     /* align-content: center; */
-    z-index: 1;
+    z-index: 4;
     padding: 1em;
 }
 
@@ -36,8 +41,8 @@ body {
     text-decoration: none;
     color: white;
     font-weight: 500;
-
-
+    
+    
 }
 
 .page-wrapper {
@@ -46,23 +51,49 @@ body {
 }
 
 .welcome {
-    background: #3282b8;
+    background: #CC5803;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    padding-top: 18em;
+}
+
+.welcome h1 {
+    align-self: flex-start;
+    font-size: 6em;
+    padding-left: 1em;
+}
+
+
+.bgr-container {
+    align-self: center;
+    width: 100%;
+    opacity: 0.2;
+}
+    
+.bgr-code {
+    width: 100%;
+    height: 100%;
+}
+
+
+.projects {
+    background: #F7934C;
     display: flex;
     flex-direction: column;
     height: 100vh;
     padding-top: 13em;
 }
 
-.projects {
-    background: #0f4c75;
+.project-tile {
+    background-color: white;
     display: flex;
-    flex-direction: column;
-    height: 100vh;
-    padding-top: 13em;
+    width: 9em;
 }
 
 .contact {
-    background: #1b262c;
+    background: #CC5803;
     display: flex;
     flex-direction: column;
     height: 100vh;
