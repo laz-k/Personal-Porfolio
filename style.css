@@ -6,23 +6,31 @@
 
 body {
     font-family: 'Ubuntu', sans-serif;
+    background-color: rgb(121, 17, 17);
+
 }
 
 
+.header {
+    height: 14em;
+}
+
 .navbar img {
-    width: 20%;
+    width: 10em;
+    height: 10em;
+    align-self: center;
+    margin-left: 3em;
+
 }
 
 .navbar {
     background: #1F1300;
-    width: 100%;
-    height: 18em;
+    width: 100vw;
+    height: 14em;
     position: fixed;
     display: flex;
-    justify-content: flex-end;
-    /* align-content: center; */
-    z-index: 4;
-    padding: 1em;
+    justify-content: space-between;
+    z-index: 3;
 }
 
 .navbar ul {
@@ -41,8 +49,9 @@ body {
     text-decoration: none;
     color: white;
     font-weight: 500;
-    
-    
+    padding: 0 3em;
+
+
 }
 
 .page-wrapper {
@@ -51,51 +60,78 @@ body {
 }
 
 .welcome {
-    background: #CC5803;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     height: 100vh;
-    padding-top: 18em;
+    justify-content: center;
+    align-content: center;
+}
+
+.welcome::before {
+    background-image: url(./images/code.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: -2;
+    opacity: 0.2;
+}
+
+.welcome::after {
+    background-color: rgb(121, 17, 17);
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    opacity: 0.7;
 }
 
 .welcome h1 {
-    align-self: flex-start;
-    font-size: 6em;
-    padding-left: 1em;
-}
-
-
-.bgr-container {
     align-self: center;
-    width: 100%;
-    opacity: 0.2;
-}
-    
-.bgr-code {
-    width: 100%;
-    height: 100%;
+    font-size: 4em;
 }
 
+.bgr-code {
+    opacity: 0.2;
+    width: 100%;
+    height: 100vh;
+}
 
 .projects {
-    background: #F7934C;
     display: flex;
     flex-direction: column;
     height: 100vh;
-    padding-top: 13em;
+    background-color: rgb(209, 152, 46);
+    justify-content: space-evenly;
+}
+
+.projects h2 {
+    font-size: 3em;
+    align-self: center;
+}
+
+.project-tile-wrap {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
 }
 
 .project-tile {
-    background-color: white;
-    display: flex;
-    width: 9em;
+    background-color: rgb(255, 255, 255);
+    width: 20em;
+    height: 20em;
+    
 }
 
 .contact {
-    background: #CC5803;
     display: flex;
     flex-direction: column;
     height: 100vh;
-    padding-top: 13em;
+    background-color: brown;
+    justify-content: center;
 }
