@@ -8,9 +8,11 @@ body {
     font-family: 'Ubuntu', sans-serif;
 }
 
-
 .navbar img {
-    width: 20%;
+    width: 10%;
+    margin-left: 5em;
+    align-self: center;
+    color: #fff;
 }
 
 .navbar {
@@ -19,8 +21,7 @@ body {
     height: 18em;
     position: fixed;
     display: flex;
-    justify-content: flex-end;
-    /* align-content: center; */
+    justify-content: space-between;
     z-index: 4;
     padding: 1em;
 }
@@ -32,8 +33,8 @@ body {
 .navbar li {
     list-style: none;
     display: inline-flex;
-    padding: 0 1em;
-    font-size: 1.2em;
+    padding: 0 1.5em;
+    font-size: 1.5em;
 }
 
 .navbar li a {
@@ -41,8 +42,6 @@ body {
     text-decoration: none;
     color: white;
     font-weight: 500;
-    
-    
 }
 
 .page-wrapper {
@@ -56,20 +55,38 @@ body {
     flex-direction: column;
     justify-content: center;
     height: 100vh;
-    padding-top: 18em;
 }
-
 .welcome h1 {
-    align-self: flex-start;
+    align-self: center;
     font-size: 6em;
-    padding-left: 1em;
+    padding-top: 3em;
+    z-index: 3;
 }
 
+.welcome h3 {
+    align-self: center;
+    font-size: 3.5em;
+    font-weight: 500;
+    z-index: 3;
+    text-align: center;
+}
+
+.welcome p {
+    align-self: center;
+    font-size: 2.5em;
+    font-weight: 400;
+    padding-top: 1em;
+    z-index: 3;
+    text-align: center;
+    line-height: 1.5;
+}
 
 .bgr-container {
     align-self: center;
+    position: absolute;
     width: 100%;
-    opacity: 0.2;
+    height: 100%;
+    opacity: 0.1;
 }
     
 .bgr-code {
@@ -77,19 +94,34 @@ body {
     height: 100%;
 }
 
-
 .projects {
     background: #F7934C;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     height: 100vh;
-    padding-top: 13em;
+    justify-content: center;
+}
+
+.projects h2 {
+    align-self: center;
+    font-size: 3em;
+    font-weight: 400;
+    z-index: 3;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.project-tile-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5em;
 }
 
 .project-tile {
     background-color: white;
-    display: flex;
-    width: 9em;
+    width: 25vw;
+    height: 50vh;
 }
 
 .contact {
