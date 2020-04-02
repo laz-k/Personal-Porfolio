@@ -2,75 +2,76 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
+  }
+  
+  body {
     font-family: 'Ubuntu', sans-serif;
-    background-color: rgb(121, 17, 17);
-
-}
-
-.navbar img {
+  }
+  
+  .navbar img {
     width: 10%;
     margin-left: 5em;
     align-self: center;
     color: #fff;
-}
-
-.navbar {
+  }
+  
+  .navbar {
     background: #1F1300;
-    width: 100vw;
-    height: 14em;
+    width: 100%;
+    height: 18em;
     position: fixed;
     display: flex;
     justify-content: space-between;
     z-index: 4;
     padding: 1em;
-}
-
-.navbar ul {
+  }
+  
+  .navbar ul {
     display: flex;
-}
-
-.navbar li {
+  }
+  
+  .navbar li {
     list-style: none;
     display: inline-flex;
     padding: 0 1.5em;
     font-size: 1.5em;
-}
-
-.navbar li a {
+  }
+  
+  .navbar li a {
     align-self: center;
     text-decoration: none;
     color: white;
     font-weight: 500;
-}
-
-.page-wrapper {
+  }
+  
+  .page-wrapper {
     display: flex;
     flex-direction: column;
-}
-
-.welcome {
+  }
+  
+  .welcome {
+    background: #CC5803;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     height: 100vh;
-}
-.welcome h1 {
+  }
+  .welcome h1 {
     align-self: center;
     font-size: 6em;
     padding-top: 3em;
     z-index: 3;
-}
-
-.welcome h3 {
+  }
+  
+  .welcome h3 {
     align-self: center;
     font-size: 3.5em;
     font-weight: 500;
     z-index: 3;
     text-align: center;
-}
-
-.welcome p {
+  }
+  
+  .welcome p {
     align-self: center;
     font-size: 2.5em;
     font-weight: 400;
@@ -78,46 +79,46 @@ body {
     z-index: 3;
     text-align: center;
     line-height: 1.5;
-}
-
-.welcome h1 {
+  }
+  
+  .bgr-container {
     align-self: center;
     position: absolute;
     width: 100%;
     height: 100%;
     opacity: 0.1;
-}
-
-.bgr-code {
-    opacity: 0.2;
+  }
+    
+  .bgr-code {
     width: 100%;
-    height: 100vh;
-}
-
-.projects {
+    height: 100%;
+  }
+  
+  .projects {
+    background: #F7934C;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     height: 100vh;
     justify-content: center;
-}
-
-.projects h2 {
+  }
+  
+  .projects h2 {
     align-self: center;
     font-size: 3em;
     font-weight: 400;
     z-index: 3;
     text-align: center;
     line-height: 1.5;
-}
-
-.project-tile-container {
+  }
+  
+  .project-tile-container {
     display: flex;
     justify-content: space-evenly;
     margin-top: 5em;
-}
-
-.project-tile {
+  }
+  
+  .project-tile {
     background-color: rgb(219, 218, 218);
     display: flex;
     flex-direction: column;
@@ -125,18 +126,18 @@ body {
     padding-top: 1.2em;
     width: 25vw;
     height: 40vh;
-}
-
-.project-tile img {
+  }
+  
+  .project-tile img {
     align-self: center;
     border: 2px solid black;
-}
-
-
-.contact {
+  }
+  
+  
+  .contact {
+    background: #CC5803;
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background-color: brown;
-    justify-content: center;
-}
+    padding-top: 13em;
+  }
