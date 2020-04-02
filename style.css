@@ -6,6 +6,8 @@
 
 body {
     font-family: 'Ubuntu', sans-serif;
+    background-color: rgb(121, 17, 17);
+
 }
 
 .navbar img {
@@ -17,8 +19,8 @@ body {
 
 .navbar {
     background: #1F1300;
-    width: 100%;
-    height: 18em;
+    width: 100vw;
+    height: 14em;
     position: fixed;
     display: flex;
     justify-content: space-between;
@@ -50,10 +52,7 @@ body {
 }
 
 .welcome {
-    background: #CC5803;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     height: 100vh;
 }
 .welcome h1 {
@@ -81,21 +80,21 @@ body {
     line-height: 1.5;
 }
 
-.bgr-container {
+.welcome h1 {
     align-self: center;
     position: absolute;
     width: 100%;
     height: 100%;
     opacity: 0.1;
 }
-    
+
 .bgr-code {
+    opacity: 0.2;
     width: 100%;
-    height: 100%;
+    height: 100vh;
 }
 
 .projects {
-    background: #F7934C;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -135,9 +134,9 @@ body {
 
 
 .contact {
-    background: #CC5803;
     display: flex;
     flex-direction: column;
     height: 100vh;
-    padding-top: 13em;
+    background-color: brown;
+    justify-content: center;
 }
