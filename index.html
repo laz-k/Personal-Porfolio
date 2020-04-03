@@ -2,68 +2,97 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css?family=Ubuntu:400,500,700&display=swap');
-    </style>
-    <title>Personal Portfolio | Project Page</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<script src="https://kit.fontawesome.com/d40456d52e.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="style.css" />
+	<style>
+		@import url("https://fonts.googleapis.com/css?family=Ubuntu:400,500,700&display=swap");
+	</style>
+	<title>Personal Portfolio | Project Page</title>
 </head>
 
 <body>
+	<header class="header">
+		<nav class="navbar" id="navbar">
+			<img src="./images/logo.png" alt="logo" />
+			<ul>
+				<li><a href="#welcome-section">About</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section class="page-wrapper">
+			<section class="welcome" id="welcome-section">
+				<h1>Hello, World</h1>
+				<h3>My name is Laz</h3>
+				<p>
+					This is my Personal Portfolio Webpage<br />
+					for freeCodeCamp's<br />Responsive Web Design Certification
+				</p>
+				<div class="bgr-container">
+					<img src="./images/code.jpg" alt="" class="bgr-code" />
+				</div>
+			</section>
+			<div class="projects-wrapper">
 
-    <header class="header">
-        <nav class="navbar" id="navbar">
-            <img src="./images/logo.png" alt="logo">
-            <ul>
-                <li><a href="#welcome-section">About me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div class="page-wrapper">
-            <section class="welcome" id="welcome-section">
-                <h1>Hello, World</h1>
-                <h3>My name is Laz</h3>
-                <p>This is my Personal Portfolio Webpage<br>
-                    for freeCodeCamp's<br>Responsive Web Design Certification</p>
-                <div class="bgr-container">
-                    <img src="./images/code.jpg" alt="" class="bgr-code">
-                </div>
-            </section>
-            <section class="projects" id="projects">
-                <h2>Below are my projects so far</h2>
-                <div class="project-tile-container">
-                    <a href="https://codepen.io/laz-k/full/jOEdPmg" target="_blank" class="project-tile">
-                        <img src="./images/survey-form-thumb.png" alt="">
-                        <h4>Survey Form</h4>
+				<section class="projects" id="projects">
+					<h2>My projects so far</h2>
+					<div class="project-tile-container">
+						<a href="https://my-first-js-todo-app.herokuapp.com/" target="_blank" class="project-tile pt1">
+							<img src="./images/task-list-thumb.png" alt="" />
+							<h4>Simple Task List</h4>
+						</a>
 
-                    </a>
+						<a href="https://laz-k.github.io/hotel-website/" target="_blank" class="project-tile pt2">
+							<img src="./images/hotel-website-thumb.png" alt="" />
+							<h4>Hotel Website</h4>
+						</a>
 
-                    <a href="https://laz-k.github.io/hotel-website/" target="_blank" class="project-tile">
-                        <img src="./images/hotel-website-thumb.png" alt="">
-                        <h4>Hotel Website</h4>
+						<a href="https://laz-k.github.io/Product-page/" target="_blank" class="project-tile pt3">
+							<img src="./images/product-page-thumb.png" alt="" />
+							<h4>Product Landing Page</h4>
+						</a>
 
-                    </a>
+						<a href="https://codepen.io/laz-k/full/jOEdPmg" target="_blank" class="project-tile pt4">
+							<img src="./images/survey-form-thumb.png" alt="" />
+							<h4>Survey Form</h4>
+						</a>
 
-                    <a href="https://laz-k.github.io/Product-page/" target="_blank" class="project-tile">
-                        <img src="./images/product-page-thumb.png" alt="">
-                        <h4>Product Landing Page</h4>
+						<a href="https://laz-k.github.io/google-homepage/" target="_blank" class="project-tile pt5">
+							<img src="./images/google-homepage.thumb.png" alt="" />
+							<h4>Google Homepage</h4>
+						</a>
 
-                    </a>
+						<a href="https://codepen.io/laz-k/full/wvBEqGN" target="_blank" class="project-tile pt6">
+							<img src="./images/tribute-page-thumb.png" alt="" />
+							<h4>Tribute Page</h4>
+						</a>
+					</div>
+				</section>
+			</div>
+			<div class="contact-wrapper">
+				<section class="contact" id="contact">
+					<h4>Get in touch<br />and let's make things happen...</h4>
+					<div class="contact-links">
+						<a href="mailto:myname@yahooo.com" class="contact-icons"><i class="fas fa-at "></i> Send e-mail</a>
+						<a href="tel:000 0000 0000" class="contact-icons"><i class="fas fa-mobile"></i> Call me</a>
+						<a href="https://www.facebook.com/lazaros.kloukas" target="_blank" class="contact-icons"><i
+								class="fab fa-facebook-square"></i> Facebook</a>
+						<a id="profile-link" href="https://github.com/laz-k" target="_blank" class="contact-icons"><i
+								class="fab fa-github"></i> GitHub</a>
+						<a href="https://twitter.com/laz_kloukas" target="_blank" class="contact-icons"><i
+								class="fab fa-twitter"></i>
+							Twitter</a>
+					</div>
+				</section>
+			</div>
+		</div>
+	</main>
 
-                </div>
-            </section>
-            <section class="contact" id="contact">
-                <h2>You may contact me</h2>
-            </section>
-        </div>
-    </main>
-    </div>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 
 </html>

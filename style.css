@@ -1,52 +1,49 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Ubuntu", sans-serif;
+}
+
+@media (max-width: 425px) {
   
-  body {
-    font-family: 'Ubuntu', sans-serif;
-  }
+  .navbar {
+    background: #1f1300;
+		width: 100vw;
+		height: 10em;
+		position: fixed;
+    display: flex;
+    flex-direction: column;
+		justify-content: space-evenly;
+		/* z-index: 4; */
+		padding: 1em;
+	}
   
   .navbar img {
-    width: 10%;
-    margin-left: 5em;
+    display: block;
+    width: 20%;
     align-self: center;
     color: #fff;
   }
-  
-  .navbar {
-    background: #1F1300;
-    width: 100%;
-    height: 18em;
-    position: fixed;
+	.navbar ul {
     display: flex;
-    justify-content: space-between;
-    z-index: 4;
-    padding: 1em;
-  }
-  
-  .navbar ul {
-    display: flex;
-  }
-  
-  .navbar li {
-    list-style: none;
-    display: inline-flex;
-    padding: 0 1.5em;
-    font-size: 1.5em;
-  }
-  
-  .navbar li a {
-    align-self: center;
-    text-decoration: none;
-    color: white;
-    font-weight: 500;
-  }
-  
-  .page-wrapper {
-    display: flex;
-    flex-direction: column;
+    justify-content: center;
+	}
+
+	.navbar li {
+		list-style: none;
+		padding: 0 1em;
+		font-size: 1em;
+	}
+
+	.navbar li a {
+		align-self: center;
+		text-decoration: none;
+		color: white;
+		font-weight: 500;
   }
   
   .welcome {
@@ -56,88 +53,124 @@
     justify-content: center;
     height: 100vh;
   }
+
+  .bgr-code {
+    display: none;
+  }
+
   .welcome h1 {
     align-self: center;
-    font-size: 6em;
+    font-size: 2em;
     padding-top: 3em;
-    z-index: 3;
   }
   
   .welcome h3 {
     align-self: center;
-    font-size: 3.5em;
+    font-size: 1.3em;
     font-weight: 500;
-    z-index: 3;
     text-align: center;
   }
   
   .welcome p {
     align-self: center;
-    font-size: 2.5em;
+    font-size: 1em;
     font-weight: 400;
     padding-top: 1em;
-    z-index: 3;
     text-align: center;
-    line-height: 1.5;
+    line-height: 2;
   }
-  
-  .bgr-container {
-    align-self: center;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    opacity: 0.1;
-  }
-    
-  .bgr-code {
-    width: 100%;
-    height: 100%;
-  }
-  
+
   .projects {
     background: #F7934C;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 100vh;
-    justify-content: center;
+    padding-bottom: 2em;
+    width: 100vw;
   }
-  
+
   .projects h2 {
     align-self: center;
-    font-size: 3em;
+    font-size: 2em;
     font-weight: 400;
-    z-index: 3;
     text-align: center;
-    line-height: 1.5;
+    padding: 2em 0;
   }
-  
+
   .project-tile-container {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 5em;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 4em;
+    /* width: 100vw; */
+    place-items: center;
   }
-  
+
   .project-tile {
-    background-color: rgb(219, 218, 218);
+    background-color: rgb(233, 233, 233);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding-top: 1.2em;
-    width: 25vw;
-    height: 40vh;
+    padding-top: 1em;
+    height: 100%;
+    box-shadow: 3px 3px 8px black;
   }
-  
+
   .project-tile img {
     align-self: center;
     border: 2px solid black;
+    width: 90%;
   }
-  
-  
+
+  .project-tile h4 {
+    align-self: center;
+    padding: 1em 0;
+    font-size: 1.4em;
+    text-decoration: none;
+    text-decoration-style: none;
+  }
+
+  .project-tile-container a {
+    text-decoration: none;
+    color: black;
+  }
+
   .contact {
     background: #CC5803;
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    padding-top: 13em;
-  }
+    justify-content: flex-start;
+    align-items: center;
+      
+    }
+    
+    .contact h4 {
+      align-self: center;
+      text-align: center;
+      font-size: 1.5em;
+      font-weight: 400;
+      padding-top: 1em;
+    }
+    
+    .contact-links {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 1em;
+    }
+    
+    .contact-links a {
+      font-size: 1em;
+      text-decoration: none;
+      color: white;
+    }
+    
+    .contact-links a:hover {
+      color: rgb(218, 218, 218);
+    }
+    
+    .contact-icons {
+      text-shadow: 3px 3px 5px black;
+    }
+
+
+
+}
